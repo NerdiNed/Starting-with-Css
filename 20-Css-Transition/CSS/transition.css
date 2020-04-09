@@ -1,0 +1,15 @@
+.somediv{
+    height: 200px;
+    width: 200px;
+    background-color: red;
+    
+    transition-duration: 2s;
+    transition-property: background-color, transform;
+}
+
+.somediv:hover{
+   
+    background-color: blue;
+    transform:rotateY(180deg);
+    
+}

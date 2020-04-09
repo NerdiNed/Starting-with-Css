@@ -1,0 +1,45 @@
+*{ 
+    margin: 0;
+
+}
+
+.flexDiv{
+    display: inline-flex;
+    vertical-align: top;
+    width: 200px;
+
+    /* children layout direction */
+    flex-direction: column; /*values can be: column, column-reverse, row is default value, row-reverse */
+
+   /*  the behavior that the children will have when the container width is less than the sum of their width */
+   flex-wrap: wrap; /* possible values : wrap, nowrap, wrap-reverse */
+
+   /* flex-flow: row wrap; */
+   /* if i use flex-flow it is flex direction and flex wrap in one, but only for those two values, it is a shortcut/shorthand */
+
+    background-color: lightgrey;
+
+     /* align children horizontally */
+    justify-content: space-around; /* possible values: space-around, space-between, flex-start, flex-end, center */
+
+    align-items: center; /* possible values: center, felx-end, flex-start */
+}
+
+.flexDiv>div {
+    /* if you don't set a width, it will take the width of the content */
+    height: 100px;
+    width: 100px;
+    margin: 10px; /* in der mitte der box wird es 20px sein, weil es margin von beiden seiten 10px ist links von der rechten box, rechts von der liken box */
+    line-height: 100px;
+    font-size: 40px;
+    text-align: center;
+    background-color: aqua;
+    color: black;
+}
+
+.nextDiv{
+    display: inline-block;
+    height: 100px;
+    width: 100px;
+    background-color: red;
+}

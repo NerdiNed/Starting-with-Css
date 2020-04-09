@@ -1,0 +1,75 @@
+.somediv{
+    height: 200px;
+    width: 200px;
+    background-color: red;
+    color: white; 
+    font-size: 30px;
+   /*  transform: rotateX(70deg); rotiert um die x-achse*/
+    /* transform: rotateY(190deg); rotiert um die y achse */
+    /* transform: rotate(170deg) */
+   /*  transform: scale(2); */
+  /*  transform: rotateX(50deg); rotiert horizontal um die x-achse*/
+  /* transform: rotateY(-180deg); rotiert vertikal um die y-achse */
+   /* transform: scale(1.5, 2);  *//* das erste ist die 1,5 fache x angabe der initial angegeben weite siehe oben 200px, y ist die 2fache menge der initial angebenen höhe (hier 200px) also x= 1,5x200=300px /y= 2x200=400px, scale vergrößert/verkleinert das objekt somit*/
+  /*  wir haben ausprobiert: rotate, rotate x, rotate y, scale */
+
+   /* transform: skewx(70deg); verdreht sich um die x achse */
+  /*  transform: skewY(-30deg); verdreht sich um die y-achse*/
+/*   transform: translateY(100px); verschiebt das objekt um 100px von der seite(rand des bildschrims) auf der y achse runter */
+ /*  transform: translateX(100px);verschiebt das objekt um 100px von der oberen höhe (rand des bildschrims) auf der y achse runter */  
+
+ position: relative;
+
+}
+
+/* .somediv:hover{
+    transform: skewY(10deg);
+} */
+
+
+/* my solution */
+/* .span1{
+    position: absolute; wenn ich position absolute habe, brauche ich kein inline block
+    display: inline-block; 
+    transform: translate(75px, 80px);
+    width: 30px;
+    height:30px
+}
+ */
+/*  ahmad solution 1
+.somediv span{
+    display: inline-block;
+    background-color: teal;
+    transform: translate(74px, 83px);
+    
+    meine rote box hat 200/200px, die hälfte davon ist 100px, mein span hat die größe 52px ( wenn ich das davon abziehen würde um die mitte zu finden, würde nur die ecke meines spans in der mitte sein nicht die gesamte box) ich nehme die hälfte meiner 52px ( also 26px) und ziehe es von der hälfte meiner roten box, also 100px ab d.h 100px-26px=74px. 
+    das gleiche mache ich mit der y-achse: 100px-17px=83px.. so entsteht dieser wert den ich bei translate einsetze
+
+
+    width: 52px;
+    height:34px;
+
+}
+ */
+
+/*  ahmad solution 2
+.somediv span{
+
+    position: absolute;
+    background-color: teal;
+    left: 50%; das ist 50% unserer roten box
+    top: 50%; das ist 50% unserer roten box
+    transform: translate(-50%, -50%); percent inside the translate is % of the span !
+    (using % in translate is referenced to the same element that has been styled, in our case the span)
+    this solution is responsive because i am using relative values
+    
+} */
+
+/* ahmad solution 3 */
+.somediv span{
+    position: absolute;
+    background-color: teal;
+    transform: translate(calc(100px - 50%), calc(100px - 50%) ); 
+    /* this solution is not responsive, because i am using static values ! ich gebe die hälfte der px meiner roten box an.. also 100px und die 50% meiner blauen box u er calculiert die mitte
+ */
+}

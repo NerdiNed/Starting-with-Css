@@ -1,0 +1,143 @@
+*{
+
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+nav>ul{
+list-style-type: none;
+/* background-color: lightpink; */
+height: 50px;
+text-align: center;
+margin: auto;
+padding-left: 10px;
+width: 380px;
+/* there is mostly problems with a static width ( static means pixel, relative is %) only if it stays under 100 it's mostly ok */
+padding-top: 5px;
+}
+
+/* man kann kein display und float gleichzeitig machen  */
+nav>ul>li{ 
+    float: left;
+    margin-right: 20px;
+    /* padding:10px; */
+    padding-top: 10px;
+    padding-bottom: 10px;
+    background-color: lightsalmon;
+    color: green;
+    width: 100px;
+    border-radius: 10px 0 10px 0;
+    
+}
+
+nav>ul>li>label:hover{
+    font-weight: bolder;
+    background-color: honeydew;
+color: black;
+font-size: 25px;
+box-shadow: black 5px 5px 5px;
+
+}
+
+.banner {
+   /*  transition: 1s ease; */
+    background-image: url(../Css/imgs/hero.jpg);
+    height: 80vh;
+    margin-top: 10px;
+    margin-left: 10px;
+    margin-right: 10px;
+    clip-path: polygon(0 0, 100% 0, 100% 60%, 0 100% );
+    background-position: 36% 19%;
+    /* first one (36%) is position x, the second one (19%)is position y. top and right */
+    /* background-size: cover;
+ */
+}
+
+/* das ist ein extra das felix gemacht hat, im oberen .banner ist noch der transition:1s ease teil dazu, der noch aktiviert werden muss.
+.banner:hover{
+    margin: 20px;
+    padding:20px;
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100% );
+    background-position: fixed;
+}
+  */
+
+section, input{
+    display: none;
+}
+
+input:checked + section{
+    display: block;
+}
+
+.dropdown{
+      position: relative;
+      z-index: 3;
+      display: none;
+}
+
+.dropdown>ul {
+    background-color: black;
+    list-style-type: none;
+}
+
+.dropdown>ul>li{
+    margin-bottom: 5px;
+    width: 100px;
+    text-align: center;
+}
+
+.dropdown>ul>li>a{
+    text-decoration: none;
+    color: white;
+    background-color:gray;
+    display: block;
+    border-radius: 10px 0 10px 0;
+}
+
+.dropdown>ul>li>a:hover{
+
+    font-size: 20px;
+}
+
+nav>ul>li:hover>.dropdown{
+display: block;
+
+}
+
+/* diesen @media code benutzt man um specifisch dinge für ipad oder telefone zu gestlaten. er überdschreibt auch alle anderen vorherigen codes */
+@media only screen and (max-width:390px){
+   
+    nav>ul{
+
+        width: 100%;
+        height: 150px;
+    }
+
+ nav>ul>li{
+     margin-bottom: 10px;
+     width: 100%;
+
+}
+
+body{
+    background-color: red;
+}
+
+
+}
+
+@media only screen and (min-width:390px){
+    body{
+        background-color: blue;
+    }
+
+}
+
+@media only screen and (min-width:1200px){
+    body{
+        background-color:greenyellow
+    }
+}

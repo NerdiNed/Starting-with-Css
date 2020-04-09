@@ -1,0 +1,16 @@
+.container{
+    position: relative;
+    height: 660px;
+    width: 900px;
+    overflow-x: scroll;
+    overflow-y: hidden;
+ }
+ .images{
+    position: absolute;
+    float: right;
+    height: 100%;
+    width: 3000px;
+ }
+ img {
+    height: 100%;
+ }

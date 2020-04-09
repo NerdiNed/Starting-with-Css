@@ -1,0 +1,47 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.head, .footer{
+height: 150px; /* 20vh */
+background-color: green;
+display: flex;
+}
+
+.container{
+    display: flex;
+}
+
+.article{
+
+    
+    flex-grow: 3;
+    height: 60vh;
+
+    background-color:white;
+}
+
+.aside{
+    flex-grow: 1; 
+    height: 60vh;
+     background-color: lightgreen;
+
+}
+
+.nav{
+
+    flex-grow: 1; 
+    height: 60vh;
+     background-color: grey;
+}
+
+.footer{
+
+    background-color: limegreen;
+
+}
+
+

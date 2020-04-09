@@ -1,0 +1,36 @@
+.animated{
+background-color:blueviolet;
+width: 100px;
+height: 100px;
+animation-name: FBW5;
+animation-duration: 5s;
+animation-iteration-count: infinite;
+
+}
+
+/* @keyframes ist der selektor für animationen.. dann wird ein name dafür ausgewählt. dieser wird in der klasse animation oben angegeben u somit angewählt */
+@keyframes FBW5{
+/* from{
+    background-color: blueviolet;
+
+}
+to{
+    background-color: lightpink;
+} */
+
+0%{ 
+ /*  width: 100px;das ist der startpunkt der animation wenn von 5px dann startet es von 5px */
+    background-color: blueviolet;
+}
+
+50%{
+    background-color: lightpink;
+    width: 500px;
+}
+/* 
+100%{ 
+    width: 100px;
+    background-color: blueviolet;
+}
+ */
+}

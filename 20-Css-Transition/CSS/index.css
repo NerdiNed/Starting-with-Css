@@ -1,0 +1,25 @@
+.somediv{
+    height: 200px;
+    width: 200px;
+    background-color: aqua;
+
+  /*   transition-property: width; */
+    transition-duration: 2s;
+}
+
+.somediv:hover{
+    /* width: 70vw;
+    height: 400px; */
+    /* background-color: red; */
+    
+    
+}
+
+.somediv span{
+  display: inline-block;
+  transition-duration: 2s;
+  transition-property: transform;
+  }
+  .somediv:hover span {
+      transform: translate(74px,83px);
+      }

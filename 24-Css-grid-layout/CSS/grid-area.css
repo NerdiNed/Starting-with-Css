@@ -1,0 +1,43 @@
+.container{
+    display: grid;
+    height: 100vh;
+    background-color: mediumseagreen;
+
+    grid-template-areas: "header header header"
+                         "menu main right" 
+                         "menu footer footer";
+    grid-template-rows: 20vh auto 50vh;   /* erste reihe ist 20vh, zweite auto, dritter wieder 20vh*/                  
+
+
+
+
+   grid-gap: 10px;
+
+
+}
+
+.container>div{
+    background-color: moccasin ;
+}
+
+.header{
+    grid-area: header;
+}
+
+.menu{
+grid-area: menu;
+
+}
+
+.main{
+    grid-area: main;
+
+}
+
+.right{
+    grid-area: right;
+}
+
+.footer{
+    grid-area: footer;
+}

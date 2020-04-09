@@ -1,0 +1,23 @@
+
+.somediv{
+    position: relative;
+    height: 200px;
+    width: 300px;
+    background-color: aqua;
+}
+
+.somediv:hover span{ /* weil ich nur ein span habe, kann ich den tag: span benutzen, hätte ich mehrere klassen, müsste ich einen punkt. davor setzen */
+left: 50%;
+top: 50%;
+transform: translate(-50%, -50%);
+
+}
+
+.span{
+    background-color: rgb(179, 11, 11);
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    transition-property: left, top, transform;
+    transition-duration: 2s;
+}

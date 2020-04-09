@@ -1,0 +1,79 @@
+.container{
+    position: relative;
+    width: 80%;
+    height: 40vh;
+   /*  overflow-x: scroll; */
+   overflow-x: hidden;
+    overflow-y: hidden;
+    margin: auto;
+    border-radius: 10px;
+    box-shadow: 10px 10px 10px black;
+}
+.container>div>div:nth-child(1) {
+    background-image: url(../imgs/nat-5.jpg);
+    background-size: cover ;
+    background-position-y: 30%;
+    width: 80vw;
+    height: 40vh;
+    float: left;
+}
+.container>div>div:nth-child(2){
+    background-image: url(../imgs/nat-6.jpg);
+    background-size: cover ;
+    background-position-y: 30%;
+    width: 80vw;
+    height: 40vh;
+    float: left;
+}
+.container>div>div:nth-child(3){
+    background-image: url(../imgs/nat-7.jpg);
+    background-size: cover ;
+    background-position-y: 60%;
+    width: 80vw;
+    height: 40vh;
+    float: left;
+}
+.container>div{
+    position: absolute;
+    width: 240vw;
+    left: 0;
+    animation-name: photosDiv;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+    opacity: 0;
+   
+}
+@keyframes photosDiv{
+    0% { left: 0;
+    opacity: 1;}
+
+    /* ich habe einen zwischenschritt eingearbeitet, damit die opacity etwas smoother aussieht */
+    30%{ opacity: 1;}
+
+    33.33% { left: -80vw;
+             opacity: 0;}
+    60%{opacity: 1;}       
+    66.66% { left:-160vw;
+        opacity: 0;}
+
+    96%{ opacity: 1;}
+    100% { left: 0;
+        opacity: 0;}
+}
+
+
+
+  /*  ich kann nur EINE keyframe pro div verwenden (also nur eine animation pro div !) der name des keyframes verhält sich wie ein ID, es kann nur einmal verwendet werden ! wenn ich zwei keyframes mit dem gleichen namen untereinender schreibe, dann überschreibt es den vorherigen  */
+
+ /*  also muss ich alle in ein keyframe schreiben , wenn es den gleichen DIV betrifft. (siehe oben) */
+
+/* @keyframes photosDiv2 {
+    0% {opacity: 1}
+   30%{ opacity: 1;}
+    33.33% {opacity: 0;}
+    60%{opacity: 1;}
+    66.33% {opacity: 1;}
+    100% {opacity: 0;}
+  }
+   */
+  
