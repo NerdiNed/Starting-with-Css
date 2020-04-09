@@ -1,0 +1,27 @@
+.somediv{
+    height: 2000px;
+    width: 500px;
+    background-color: red;
+
+}
+
+.subdiv{
+    height: 50px;
+    width: 50px;
+    background-color: blue;
+    position: fixed;
+    /*if i dont set bottom or top it will be fixed to it initial position*/
+top: 90vh;
+left: 50vw;
+}
+
+/* vh und vw heisst viewport und bezieht sich auf das sichtbare auf der seite und nicht die gesamte seitengröße */
+
+.goUp { position: fixed;
+    font-size: 30px;
+    right: 10px;
+    bottom: 10px;
+    color: black;
+
+
+}

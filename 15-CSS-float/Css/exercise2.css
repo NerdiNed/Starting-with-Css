@@ -1,0 +1,140 @@
+*{
+
+    margin: 0;
+    padding: 0;
+}
+
+
+.div1{
+
+    background-color: red;
+    height: 60px;
+    width: 100%;
+
+}
+
+.div2{
+
+    background-color: blue;
+    height: 100px;
+    width: 100%;
+    
+}
+
+.div3{
+
+    background-color: green;
+    height: 100px;
+    width: 25%;
+    float: left;
+    
+    
+}
+
+
+.div4{
+
+    background-color: yellow;
+    height: 100px;
+   
+
+
+}
+
+.div5{
+
+    background-color:purple;
+    height: 100px;
+    width: 75%;
+    float: left;
+    
+}
+
+.div6{
+
+    background-color: turquoise;
+    height: 200px;
+    width: 25%;
+    float: right;
+    
+    
+}
+
+
+.div7{
+
+    background-color: salmon;
+    height: 320px;
+    width: 25%;
+   float: left;
+
+}
+
+.div8{
+
+    background-color: lime;
+    height: 200px;
+    width: 75%;
+   
+
+}
+
+.div9{
+
+    background-color: lightseagreen;
+    height: 220px;
+    width: 75%;
+   float: right;
+    
+}
+@media only screen and (max-width: 797px){
+    .div3{
+        width: 50%;
+    }
+    .div5{
+        width:50%
+
+    }
+    .div6{
+        height: 200px;
+    width: 50%;
+
+    }
+    
+    .div7{
+        height: 100px;
+        width: 50%;
+    }
+
+    .div8{
+        height:50px;
+    
+        width: 100%;
+    clear: both
+        }
+        .div9{
+            width:100%
+        }
+    }
+@media only screen and (max-width: 340px){
+    div{
+        clear: both;
+        width: 100% !important;
+
+        /* 1. media ( heisst eigentl. media query)überschreibt alles was davor geschrieben wurde, also schreibt man die höhere zahl VOR der niedrigeren und arbeitet sich so vor. in unserem falle erst 797px , dann 340px.
+        ein div ist ein TAG SELECTOR.. eine CLASS ist stärker (spezifischer) als ein TAG, ein ID ist stärker als ein CLASS. in meinem fall habe ich "leider" ein div tag mit dem max. width von 100% von dem ich möchte das er angenommen wird. da die anderen sachen/parameter, die ich in dem 797px bestimmt habe, alles CLASSEN sind, müsste ich entweder alles mühsam neu machen, damit mein div withd 100% angenommen wird. dies möchte ich ja nicht tun, darum schreibe ich das !IMPORTANT hinter dem width, somit ist es wichtiger als alles andere u wird angenommen.*/
+
+        es wäre besser zu schreiben : 
+        
+        @media only screen and (max-width: 340px){
+        [class^='div']{
+            clear: both;
+        width: 100% 
+
+        /* das ^ heisst dass es alle classen nimmt die mit div startet. wenn ich sternchen * benutze heisst es, dass es alle classen nimmt, die das WORT div beinhalten */
+        }
+    }
+    }
+}
+
+

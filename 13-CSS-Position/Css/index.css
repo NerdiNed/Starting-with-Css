@@ -1,0 +1,49 @@
+.somediv{
+    background-color: red;
+    height: 100px;
+    width: 100px;
+    /* left: 50px; */
+    right: 20px;
+    bottom: 20px;
+    /* top: 50px; */
+    position: relative;
+    /*it is relative from the parent i can control "relative" by putting left, right ---if you have left, then right wont work, if you have bottom then top wont work*/
+z-index: 4;
+/*z index can only be for child elements and controls the layers.. which one above who */
+}
+
+
+.par{
+    position: relative;
+    bottom: 100px;
+    z-index: 2;
+    /*the layer with the higher z-index will be the top-layer*/
+}
+
+.container{
+
+    position: relative;
+    background-color: green;
+    left: 100px;
+
+}
+/* 
+/* .fixeddiv{
+    background-color: hotpink;
+    height: 50px;
+    width: 50px;
+    position: fixed;
+    /* top: 50px;
+    left: 500px; 
+    } */
+
+.fixeddiv{
+    background-color: hotpink;
+    height: 50px;
+    width: 50px;
+    position: sticky;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    /* left: 500px; */
+}

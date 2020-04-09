@@ -1,0 +1,50 @@
+* {
+
+margin: 0px;
+padding: 0px;
+box-sizing: border-box;
+
+}
+
+div {
+    /* overflow: hidden; */
+    
+    width: 50%;
+    display: inline-block;
+    border: hotpink solid 3px; 
+    
+}
+
+.bild {
+    width: 200px;
+    position: absolute;
+ 
+}
+.img1{
+    position: relative;
+  
+    left: 10px;
+    top: 70px;
+    z-index: 20;
+}
+
+.img2{
+
+    position: relative;
+    
+    left: 5px;
+    top: 50px;
+  
+
+}
+
+.img3{
+    position: relative;
+  
+    left: 90px;
+    top: 30px;
+   
+
+
+}
+

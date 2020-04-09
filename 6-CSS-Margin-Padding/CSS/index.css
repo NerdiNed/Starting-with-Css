@@ -1,0 +1,29 @@
+
+
+
+/* *,{
+
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+
+} */
+
+
+
+.somespan1{
+
+/* if the margin is minus in this case, the red will overlap the red.. if margin is for example 10 then it goes far away. margin is the space around the box */
+background-color: red;
+margin-right:2px;
+padding-right: 10px;
+
+}
+
+
+.somespan2{
+
+background-color: blue;
+margin-left: 0;
+
+}

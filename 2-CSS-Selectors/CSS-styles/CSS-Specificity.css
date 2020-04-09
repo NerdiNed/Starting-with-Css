@@ -1,0 +1,25 @@
+#par{
+    color: red;
+}
+.bar{
+    color: seagreen;
+}
+
+.someclass{ 
+ color: blue;
+
+}
+/* this .somediv div p is more specific than the following ".somediv p" thats why the next one blueviolet wont overwrite this auqa, even the blueviolet is written after */
+.somediv div p{
+    color: aqua;
+
+}
+/* if i activate this following comment, the paragraph color would be red, because it is written AFTER the auqa.. both are specific, child selectors are not ,more specific than the code above.. they have the same importancs so the one coming after will be run */
+/* .somediv>div>p{
+    color: red;
+
+} */
+
+.somediv p {
+    color: blueviolet;
+}

@@ -1,0 +1,20 @@
+*{ /*stern markiert alles im ht,ml an.. betrifft alle elmente */
+
+    box-sizing: border-box;
+}
+.container{
+    background-color: aquamarine;
+    height: 500px;
+    width: 50%;
+}
+.child1{
+    background: chocolate;
+    width: 100px; visibility: hidden;
+}
+.child2{
+    background:salmon;
+    width: 50px; /*display: none*/ opacity: 0.5;
+}
+.span1{background-color: darkgoldenrod;width:50%; display: /*block*/inline-block;border: darkgreen 1px solid;}
+.span2{background-color: darkorchid;width: 50%; display: inline-block;}
+/*inline element can not have size[width and height]*/

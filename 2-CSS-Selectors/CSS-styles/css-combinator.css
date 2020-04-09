@@ -1,0 +1,33 @@
+/*the plus means the p that is DIRECTLY after the div will be affected-.-- if there are two divs with a p after it every p directly after every div will be efected*/
+/* div+p{
+    color:red
+} */
+/* 
+/*es ist egal welches man zuerst aus der Reihenfolge angibt, der plusselector nimmt genau das nach dem angewählten*/
+/* article + p{
+    color: red;
+} */ 
+
+/* only every paragraph after any paragraph should be red
+p + p{
+     color:red;
+ } */
+
+/* p+p+article{
+    color: red;
+} */
+
+/* select first div in the content
+div:first-child{
+    color: red;
+} */
+
+/* select the 7 child element in the content
+:nth-child(7){
+    color: red;
+} */
+
+/* jedes div das nach dem p kommt wird rot aber div 5 nicht weil es in einem article ist ! */
+p~div{
+    color: red;
+}

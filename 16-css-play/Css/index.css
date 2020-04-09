@@ -1,0 +1,44 @@
+
+nav{
+  margin: 20px;
+  text-align: center;
+  top: 30px;
+  background-color: rgba(128, 128, 128, 0.548);
+}
+
+nav > ul > li{
+  display: inline-block;
+  width: 150px;
+  height: 30px;
+  background-color: aquamarine;
+  text-align: center;
+  padding-top: 6px;
+  border-radius: 0 10px 0 10px;
+
+}
+nav > ul > li:hover{
+    background-color: rgb(56, 53, 53);
+    box-shadow: 5px 5px 5px black;
+    font-size: 18px;
+    padding-top:5px;
+}
+
+.panel {
+    background-image: url(./images/colors.jpg);
+    height: 70vh;
+   
+    clip-path: polygon(0 0, 100% 0%, 100% 35%, 0% 100%);
+     }
+
+
+input{
+    display: none;
+ }
+
+ input + div, input{
+
+    display: none;
+ }
+ input:checked + div{
+    display: block;
+}

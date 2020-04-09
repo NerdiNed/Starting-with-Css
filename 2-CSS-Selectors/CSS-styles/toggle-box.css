@@ -1,0 +1,20 @@
+#togglebox:checked + label{
+    border: 3px solid red;
+}
+/* erst kommt das checked,weil es direkt zur togglebox gehört das + zeigt an das das nachfolgende element, in dem fall LABEL einbezogen werden soll, bzw + zeigt an das es sich auf das nachfolgende beziehen soll*/
+
+.togglebox{
+    display: none;
+}
+
+#menü:checked + ul {
+    display: align;
+}
+#menü{
+    float: right;
+
+}
+#list{
+
+ float: right;
+}

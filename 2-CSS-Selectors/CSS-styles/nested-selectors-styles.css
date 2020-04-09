@@ -1,0 +1,54 @@
+
+
+/* .divClass{
+    color: red;
+} */
+
+/*only the paragraph inside the article element is blue*/
+/* article p{
+    color: blue;
+} */
+
+/*only the paragraph which is directly inside the element will class"divClass"*/
+/* .divClass>p{
+color: chartreuse;
+} */
+
+/* this will make paragraph 2+3 green--because the command with a space between divClass and div.. is saying to go to the next available div and target everything in it( also the other divs) and the second space between div and p is saying: take all the next available p's
+
+.divClass div p{
+    color: chartreuse;
+    } */
+
+/* mit divClass>p markiere ich zusätzlich zu dem paragraph 2+3 den ersten.. durch ein Komma kann ich beides trennen*/
+/* .divClass div p,.divClass>p{
+        color: chartreuse;
+        } */
+
+
+
+/* the following comments are from Ahmads nested-selector.css file same thing as mine above but with what i missed */
+     
+/* all texts are red */
+/* .divClass{
+    color: red;
+} */
+
+/*only paragraphs are red*/
+/* p{
+    color: red;
+} */
+
+/*only the paragraph inside article element is red*/
+/* article p{
+    color: red;
+} */
+
+/*only the paragraph which is directly inside the element with class "divClass" */
+/* .divClass > p{
+    color:red;
+} */
+
+.divClass div p, .divClass>p{
+    color: red;
+}   

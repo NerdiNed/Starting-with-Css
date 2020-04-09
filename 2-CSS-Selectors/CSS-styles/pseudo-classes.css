@@ -1,0 +1,22 @@
+
+
+
+.somelink:visited{
+color: red
+}
+
+.somelink:active{
+    color: green;
+}
+
+/* .toggle-box {
+    display: none;
+  } */
+#box1 {
+    display:none;
+}
+
+#box1:checked + label {
+    color: red;
+    font-style: normal;
+}

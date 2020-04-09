@@ -1,0 +1,18 @@
+.somediv{ 
+    /* height: 100vh */
+    height: 300px;
+    width: 300px;
+   background-color:aquamarine;
+/* border-top-color: black;
+border-top-style: solid ;
+border-top-width: 5px; */
+
+/* border-top: 5px solid black; */
+
+border: 5px solid black;
+/* border-radius: 0px 20px 0 30px; */
+border-radius: 50%;
+margin: auto; 
+/* dadurch das wir oben hight und with (auch in px) angegeben haben, haben wir ein ein quadrat geschaffen in dem wir dann border radius-50% geschrieben haben, ist es ein kreis, mit margin auto haben wir es den kreis zentriert... ohne height and width, nur mit height vh, hatten wir die höhe auf 100 gesetzt u somit sah der radius 50% aus wie eine elipse*/
+
+}

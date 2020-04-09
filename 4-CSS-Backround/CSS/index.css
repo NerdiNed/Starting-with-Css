@@ -1,0 +1,55 @@
+.somediv {
+    height: 80vh;
+    /* background-color: red; */
+    /* background-image: url(../imgs/ocean.jpg);
+ background-repeat: no-repeat;
+ background-size: cover;
+ background-position: 10% 56%; */
+ background: url(../imgs/ocean.jpg) no-repeat 40% 56% ;
+ background-size: cover; 
+
+ 
+}
+
+.div1 {
+/* background-image: url(../imgs/ocean.jpg); */
+
+background: linear-gradient(to right top, rgba(196, 26, 26, 0.781), rgba(37, 93, 197, 0.911) ), url(../imgs/ocean.jpg) no-repeat 40% 56%;
+
+
+/* background: radial-gradient(ellipse, rgba(196, 26, 26, 0.781), rgba(37, 197, 37, 0.911) ), url(../imgs/ocean.jpg) no-repeat 40% 56%; */
+background-size: cover;
+
+
+
+clip-path: polygon(50% 0%, 61% 35%, 98% 35%, 68% 57%, 79% 91%, 50% 70%, 21% 91%, 32% 57%, 2% 35%, 39% 35%);
+}
+/* .pizza {
+
+    position: relative;
+    height: 250px;
+    width: 250px;
+    border-radius: 50%;
+    padding: 2px;
+    background: lightgreen;
+    background-clip: content-box;
+    overflow: hidden;
+  }
+  .pizza:after {
+    position: absolute;
+    content: '';
+    height: 100%;
+    width: 100%;
+    border-radius: 0%;
+    left: 50%;
+    top: -50%;
+    background: white;
+    transform-origin: left bottom;
+    transform: skewY(-15deg) skewX(-30deg);
+    transition: all 1s;
+  }
+  .pizza:hover:after {
+    transform: skewY(-15deg) skewX(-90deg);
+  }
+  .illustration:after {
+    background: red; */

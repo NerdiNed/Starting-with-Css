@@ -1,0 +1,169 @@
+body{
+    background-color: rgb(236, 232, 232);
+}
+
+.card{
+   /*  height:  90vh; */
+    background-color: white;
+    margin: 20px;
+    position: relative;
+    max-height: 560.688px;
+    /* overflow-y: scroll; evtl, wenn der kasten mehr text hat*/
+    box-shadow: 5px 7px 6px grey;
+    border-radius: 10px;
+   
+    padding-bottom: 40px;
+
+}
+
+/* .container{
+
+    width: 60%;
+    margin: auto;
+}  /* wir haben es in die library eingefügt, darum haben wir es hier gelöscht*/
+ 
+.img1{
+
+    height: 150px;
+
+   /*  background-image:linear-gradient(170deg, rgba(167, 177, 27, 0.377) 0%, rgba(32, 32, 121, 0.377) 100%),  */
+
+   background-image: linear-gradient( rgba(155, 155, 30, 0.527), rgba(155, 155, 30, 0.527)),
+    url(/img/nat-5.jpg);
+
+    background-size: cover;
+    /* mit cover nimmt das bild die gesamte boxgröße ein,egal wie klein/groß es ist */
+
+    clip-path: polygon(0 0,100% 0,100% 80%,0 100%);
+
+    border-radius: 10px 10px 0 0;
+}
+
+.img2{
+
+    height: 150px;
+
+    background-image: linear-gradient( rgba(28, 172, 52, 0.603), rgba(28, 172, 52, 0.603)),url(/img/nat-6.jpg);
+
+    background-size: cover;
+    /* mit cover nimmt das bild die gesamte boxgröße ein,egal wie klein/groß es ist */
+
+    clip-path: polygon(0 0,100% 0,100% 80%,0 100%);
+    border-radius: 10px 10px 0 0;
+}
+
+.img3{
+
+    height: 150px;
+
+    background-image: linear-gradient( rgba(26, 46, 221, 0.527), rgba(26, 46, 221, 0.527)),url(/img/nat-7.jpg);
+
+    background-size: cover;
+    /* mit cover nimmt das bild die gesamte boxgröße ein,egal wie klein/groß es ist */
+
+    clip-path: polygon(0 0,100% 0,100% 80%,0 100%);
+    border-radius: 10px 10px 0 0;
+}
+
+.title1{
+    position: absolute;
+    top: 92px;
+    right: 3px;
+    text-transform: uppercase;
+    /* background-color: rgba(255, 166, 0, 0.438); es geht auch mit background color aber wir machen  es mit background und linear gradient */
+    background: linear-gradient(to bottom right, rgba(230, 154, 12, 0.452)0%, rgba(207, 152, 49, 0.705));
+    padding: 5px;
+    color: white;
+}
+
+.title2{
+    position: absolute;
+    top: 115px;
+    right: 7px;
+    text-transform: uppercase;
+    /* background-color: rgba(255, 166, 0, 0.438); es geht auch mit background color aber wir machen  es mit background und linear gradient */
+    background: linear-gradient(to bottom right, rgba(187, 132, 29, 0.479)0%, rgba(138, 96, 18, 0.938));
+    padding: 5px;
+    color: white;
+
+
+}
+
+.title3{
+    position: absolute;
+    top: 92px;
+    right: 3px;
+    text-transform: uppercase;
+    /* background-color: rgba(255, 166, 0, 0.438); es geht auch mit background color aber wir machen  es mit background und linear gradient */
+    background: linear-gradient(to bottom right, rgba(34, 136, 9, 0.596)0%, rgba(38, 143, 43, 0.938));
+    padding: 5px;
+    color: white;
+
+
+}
+
+.title4{
+    position: absolute;
+    top: 115px;
+    right: 7px;
+    text-transform: uppercase;
+    /* background-color: rgba(255, 166, 0, 0.438); es geht auch mit background color aber wir machen  es mit background und linear gradient */
+    background: linear-gradient(to bottom right, rgba(34, 136, 9, 0.596)0%, rgba(38, 143, 43, 0.938));
+    padding: 5px;
+    color: white;
+
+
+}
+
+.title5{
+    position: absolute;
+    top: 92px;
+    right: 3px;
+    text-transform: uppercase;
+    /* background-color: rgba(255, 166, 0, 0.438); es geht auch mit background color aber wir machen  es mit background und linear gradient */
+    background: linear-gradient(to bottom right, rgba(32, 29, 187, 0.479)0%, rgba(18, 36, 138, 0.938));
+    padding: 5px;
+    color: white;
+
+
+}
+.title6{
+    position: absolute;
+    top: 115px;
+    right: 7px;
+    text-transform: uppercase;
+    /* background-color: rgba(255, 166, 0, 0.438); es geht auch mit background color aber wir machen  es mit background und linear gradient */
+    background: linear-gradient(to bottom right, rgba(32, 29, 187, 0.479)0%, rgba(18, 36, 138, 0.938));
+    padding: 5px;
+    color: white;
+
+}
+
+/* man könnte auch alle allgemeine positionen, die für alle spans gilt , zb position, top, text, padding etc, alles in eine CLASS SPAN setzt, und für alle titel ( also alles was für jeden einzelnen bereich spezifischer wird, eine eigene CLASS machen wie title1 etc u in diese nur die farbe rein tun */
+
+.list{
+    list-style-type: none;
+    margin-top: 20px;
+    text-align: center;
+    color: grey;
+    font-size: smaller;
+    /* padding: 20px; 
+    --für dieses padding muss in .list>li margin bottom u padding bottom aktiviert werden und hier line-height deaktiviert*/
+    line-height: 56px;
+}
+
+.list>li{
+
+   /*  margin-bottom: 15px;
+    padding-bottom: 10px; 
+    wenn ich das aktiviere muss ich in CLASS . list das padding aktivieren und line height deaktivieren*/
+    border-bottom: 1px solid rgba(0, 0, 0, 0.342);
+
+    margin:auto;
+    width: 60%;
+    /* dieses margin funktioniert, wegen in der CLASS .liste  line height aktiviert ist, wenn ich das andere aktiviere muss ich dieses deaktivieren*/
+}
+
+.list>li:last-child{
+    border-bottom: none;
+}

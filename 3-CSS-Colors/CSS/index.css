@@ -1,0 +1,18 @@
+.somediv {
+    /* color name */
+    /* background-color: red; */
+
+    /* rgb farben sind von 0-255 scaliert, wenn ich 255 ist es die volle farbe */
+    /* background-color: rgb(157,255,8); */
+
+/* RGBA */
+/* background-color: rgba(0,0,0,0.5); */
+
+/* hex colors
+background-color: #ffff00; */ 
+
+
+    height: 100vh;
+    position: absolute;
+    width: 100vw;
+}

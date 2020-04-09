@@ -1,0 +1,56 @@
+*{ margin: 0;
+    padding: 0;
+    box-sizing: border-box
+
+
+}
+
+div{
+    width: 50%;
+    display: inline-block;
+    overflow: hidden;
+    height: 500px;
+    padding: 10px;
+    position: relative;
+
+}
+
+.imgContainer{
+position: relative;
+
+}
+
+.imgContainer img{
+
+    width: 200px;
+    position: absolute;
+
+}
+
+.imgContainer img:nth-child(3){
+    left: 80px;
+    top: 70px;
+
+}
+
+
+.imgContainer img:nth-child(2){
+    left: 200px;
+    top: 120px;
+
+}
+
+/*pseudo class um die einzelnen bilder/kinder in dem div image container anzusprechen, statt für jedes bild eine eigene classe zu erstellen */
+.imgContainer img:nth-child(1){
+    left: 150px;
+    top: 10px;
+
+}
+
+.imgContainer img:hover{
+   outline-offset: 10px;
+   outline: solid 10px lightcoral;
+   width: 250px;
+   z-index: 3;
+
+}

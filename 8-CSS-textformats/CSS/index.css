@@ -1,0 +1,37 @@
+article h1{
+    color: darkblue;
+    text-align: center;
+    text-decoration: underline wavy; 
+    /* overline, underline, line-through, underline wavy, none */
+    letter-spacing: 5px; /*space between the letters*/
+}
+
+article p{
+
+    border: darkmagenta solid 3px;
+    width: 400px;
+    text-align: justify;
+    text-indent: 50px; /* space at the beginning of the paragraph*/
+    line-height: 25px;
+
+}
+
+.par{
+    text-transform:none; /*uppercase,lowercase, capitalize*/
+    letter-spacing: 7px;
+}
+
+.par2 {
+    word-spacing: 20px; /* it can be negative as well*/
+   writing-mode: vertical-rl;
+}
+
+.par2::first-letter{
+    word-spacing: 20px; /* it can be negative as well*/
+   color: red;
+  font-size: 50px;
+   /* line-height: px; /*you can also use line height to make the letter bigger*/
+} 
+
+
+

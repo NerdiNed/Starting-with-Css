@@ -1,0 +1,18 @@
+/*Selector will TAG NAME*/
+title{
+    color: darkblue;
+    display: block;
+}
+
+/*selector with CLASS NAME*/
+.paragraph{
+    letter-spacing:3px ;
+    text-shadow: 5px -5px 5px black;
+}
+
+/*selector by ID*/
+/*ein Id darf nur einmal verwendet werden! ID ist einzigartig u darf nur einmal verwendet werden. wenn*/
+#someID{
+    box-shadow: 5px 5px 3px black;
+    background-color: lightgreen;
+}
